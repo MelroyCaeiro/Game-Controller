@@ -4,8 +4,7 @@ import random as rd
 import sys
 pyautogui.FAILSAFE= True
 
-def Click():
-    #pyautogui.click(interval=0.02)
+def Hotkey():
     pyautogui.hotkey("ctrl", "shift", "esc")
 
 try:
@@ -23,7 +22,7 @@ while True:
     cond = (ll<20 or ll>2000)
 
     if cond==True:
-        Click()
+        Hotkey()
         print("go")
     else:
         print("stop")
